@@ -1,0 +1,28 @@
+{
+  "name": "alarm_app",
+  "productName": "Pasientalarm",
+  "version": "1.0.0",
+  "description": "Brukergrensesnitt for pasientalarm",
+  "main": "src/main.js",
+  "author": "Dudeludek",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^29.0.1",
+    "electron-builder": "^24.12.0"
+  },
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder --dir",
+    "build": "electron-builder --dir"
+  },
+  "pack": {
+    "appId": "com.dudeludek.pasientalarm"
+    },
+  "build": {
+    "appId: ": "com.dudeludek.pasientalarm",
+    "icon": "src/assets/icon.png",
+    "target": "AppImage",
+    "arch": "armv7l"
+  }
+}
